@@ -1,0 +1,22 @@
+<div class="ui pointing menu main-content">
+  <a class="item" [ngClass]="{'active': arrayActive[0]}" (click)="clickMenuActive(0)">
+    Geral
+  </a>
+  <a class="item" [ngClass]="{'active': arrayActive[1]}" (click)="clickMenuActive(1)">
+    Mundo
+  </a>
+  <a class="item" [ngClass]="{'active': arrayActive[2]}" (click)="clickMenuActive(2)">
+    Loterias
+  </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui segment main-content">
+  <app-listagem-categoria [itensCategoria]="itensCategoria"></app-listagem-categoria>
+</div>

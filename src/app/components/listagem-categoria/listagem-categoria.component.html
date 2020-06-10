@@ -1,0 +1,21 @@
+<div class="ui cards" *ngFor="let item of itensCategoria">
+    <div class="card">
+      <div class="content">
+        <img class="right floated mini ui image" src="{{item.pathImage}}">
+        <div class="header">
+          {{item.titulo}}
+        </div>
+        <div class="meta">
+            {{item.subTitulo}}
+        </div>
+        <div class="description">
+            {{item.descricao}}
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="ui buttons">
+          <div class="ui basic green button" (click)="listarNoticias(item)">Entrar</div>
+        </div>
+      </div>
+    </div>
+  </div>

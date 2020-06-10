@@ -1,0 +1,9 @@
+<div style="margin-top: 10px;" *ngIf="feedRss">
+    <div class="ui message item-feed" *ngFor="let item of feedRss.items">
+        <div class="header">
+          {{item.title}}
+        </div>
+        <p>{{item.description | slice:0:200}}</p>
+    </div>
+
+</div>
